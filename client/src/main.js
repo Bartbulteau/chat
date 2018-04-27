@@ -6,6 +6,12 @@ import router from './router'
 
 Vue.config.productionTip = false
 
+/**
+ * Socket.io
+ */
+import VueSocketio from 'vue-socket.io';
+Vue.use(VueSocketio, 'http://localhost:3000/');
+
 /* eslint-disable no-new */
 new Vue({
   el: '#app',
